@@ -5,23 +5,19 @@ using System.Text;
 namespace ClassesApp
 {
     // A Class to represent a Person
-    public class BaseClass 
+    public class Person 
     {
         private string fn;
         private string _lastName;
         private int _age;
-        private string _hobbies;
-        private int _houseNo;
-        private string _street;
-        private string _town;
-        public BaseClass() { }
-        public BaseClass(string fName, string lName, int hNo = 0, string street = "", string town = "")
+        private Address _address;
+
+        public Person() { }
+        public Person(string fName, string lName, Address address = null)
         {
             fn = fName;
             _lastName = lName;
-            _houseNo = hNo;
-            _street = street;
-            _town = town;
+            _address = address;
         }
 
         public int Age
@@ -48,9 +44,10 @@ namespace ClassesApp
 
         public override string ToString()
         {
-            var addressString = $"Address: {_houseNo} {_street}, {_town}";
-            return $"{base.ToString()} Name: {fn}  { _lastName} Age: {Age}. {addressString}";
+            return $"{base.ToString()} Name: {GetFullName()} Age: {Age}. {_address.GetAddress()}";
         }
+
+      
 
         //public int StupidMethod()
         //{
