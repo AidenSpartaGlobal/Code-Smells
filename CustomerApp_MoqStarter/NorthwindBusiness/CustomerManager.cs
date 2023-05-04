@@ -20,6 +20,10 @@ namespace NorthwindBusiness
             _service = service;
         }
 
+
+
+
+
         public Customer SelectedCustomer { get; set; }
 
         public void SetSelectedCustomer(object selectedItem)
@@ -27,10 +31,16 @@ namespace NorthwindBusiness
             SelectedCustomer = (Customer)selectedItem;
         }
 
+
+
         public List<Customer> RetrieveAll()
         {
             return _service.GetCustomerList();
         }
+
+
+
+
 
         public void Create(string customerId, string contactName, string companyName, string city = null)
         {
