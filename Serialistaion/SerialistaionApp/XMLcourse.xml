@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Subject>C# Test</Subject>
+  <Title>TECH 212</Title>
+  <StartDate>2023-03-20T00:00:00</StartDate>
+  <Trainees>
+    <Trainee>
+      <FirstName>Joseph</FirstName>
+      <LastName>McCann</LastName>
+      <SpartaNo>100</SpartaNo>
+    </Trainee>
+    <Trainee>
+      <FirstName>Anthony</FirstName>
+      <LastName>Naguib</LastName>
+      <SpartaNo>101</SpartaNo>
+    </Trainee>
+  </Trainees>
+</Course>
